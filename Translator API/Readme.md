@@ -22,19 +22,19 @@ Visit [Azure Portal](https://portal.azure.com/) and click on 'New' button. In th
 
 Give this service a name, select subscription and make sure API Type selected is '**Translator Text API**' 
 
-[IMAGE 2]
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Translator%20API/Images/02-Cognitive-Services-Translator.png)
 
 Here, select the pricing tier. For this hack, F0 Free tier will work.
 
-[IMAGE 3]
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Translator%20API/Images/03-Cognitive-Services-Pricing-Tier.png)
 
 Create a new Resource Group and name it 'Xamarin-Mini-Hack' and click on 'Create' button.
 
-[IMAGE 4]
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Translator%20API/Images/04-Cognitive-Services-Create.png)
 
 Once the service is created, click on Keys section and note down the keys.
 
-[IMAGE 5]
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Translator%20API/Images/05-Cognitive-Services-Keys.png)
 
 #### Step 02: Create Xamarin.Forms Application ####
 
