@@ -84,4 +84,4 @@ private async void Authenticate_Clicked(object sender, EventArgs e)
 }
 ```
 
-Now run the app on different platforms and see the results.
+Run the apps and notice the output. Display the result to judges to mark your hack as complete.
