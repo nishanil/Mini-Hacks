@@ -18,22 +18,22 @@ This challenge requires:
 
 Visit [Azure Portal](https://portal.azure.com/) and click on 'New' button. In the search box, search for 'Cognitive Services'. Click on the result, which will bring up details pane. There will be option to 'create' a service.
 
-
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/01-Cognitive-Services-Creation.png)
 
 Give this service a name, select subscription and make sure API Type selected is '**Translator Text API**' 
 
-
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/02-Cognitive-Services-Emotion-API.png)
 
 Here, select the pricing tier. For this hack, F0 Free tier will work.
 
-
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/03-Cognitive-Services-Pricing-Tier.png)
 
 Create a new Resource Group and name it 'Xamarin-Mini-Hack' and click on 'Create' button.
 
-
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/04-Cognitive-Services-Resource-Group.png)
 
 Once the service is created, click on Keys section and note down the keys.
 
-
+![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/05-Cognitive-Services-Keys.png)
 
 #### Step 02: Create Xamarin Mobile Application ####
