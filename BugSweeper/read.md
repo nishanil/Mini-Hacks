@@ -16,7 +16,7 @@ This challenge requires:
 
 * Microsoft Visual Studio 2015 Update 3 on Windows (with Xamarin tools installed)
 * Xamarin Studio on Mac
-* Download the BugSweeper folder from [here](http://github.com/AparnaChinya/Mini-Hacks/BugSweeper)
+* Download the BugSweeper folder from [here](https://github.com/AparnaChinya/Mini-Hacks/tree/master/BugSweeper)
 
 
 ### Challenge  Walkthrough
@@ -41,7 +41,7 @@ Note: Choose the target platform and minimum platform versions that your Univers
 
 ```
 
-####Step 4: Add the [downloaded](http://github.com/AparnaChinya/Mini-Hacks/BugSweeper) resources into your project.
+####Step 4: Add the [downloaded](https://github.com/AparnaChinya/Mini-Hacks/tree/master/BugSweeper) resources into your project.
 * Right Click BugSweeper (Portable) > Add > Existing Item > Board.cs AND Tile.cs
 * Right Click BugSweeper (Portable) > Add > Create New Folder> Name it Images > Copy and paste the 2 images from the Downloaded folder into this.
 
