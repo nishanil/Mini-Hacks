@@ -4,7 +4,7 @@
 
 In this challenge, you will use one of the [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services) API's to bring emotions detection service to your cross-platform Xamarin mobile application. The goal is to use [Microsoft Cognition Services Translator API](https://www.microsoft.com/cognitive-services/en-us/translator-api) to detect happiness or sadness of the user. 
 
-Below steps should help you to complete this challenge. For queries, get in touch with [@mayur_tendulkar](https://twitter.com/mayur_tendulkar) or [@nishanil](https://twitter.com/nishanil) 
+Below steps should help you to complete this challenge. For queries, get in touch with [@mayur_tendulkar](https://twitter.com/mayur_tendulkar), [@AparnaChinya](https://twitter.com/AparnaChinya) or [@nishanil](https://twitter.com/nishanil) 
 
 This challenge requires:
 
@@ -41,18 +41,19 @@ Once the service is created, click on Keys section and note down the keys.
 * In Visual Studio create a blank solution as 'EmotionClient'
 * Add new Android Blank App and name it as 'EmotionClient.Droid'
 * Add new iPhone Single View App and name it as 'EmotionClient.iOS'
+* Add new UWP Blank App name it 'EmotionClient.UWP'
 * Add new Shared Project and name it as 'EmotionClient.Shared'
-* Add reference to this Shared Project in both iOS and Android projects.
+* Add reference to this Shared Project in iOS, Windows and Android projects.
 
 ##### Add required NuGet Packages #####
 
-For both iOS and Android projects add `'Microsoft.ProjectOxford.Emotion'` NuGet package. 
+For iOS, Windows and Android projects add `'Microsoft.ProjectOxford.Emotion'` NuGet package. 
 
 Note: If you get any error, add `'Microsoft.Bcl.Build NuGet'` package first and then try to add `'Microsoft.ProjectOxford.Emotion'`
 
 ##### Build EmotionClient.Shared #####
 
-In this project add `'Core.cs'` class which will consume Emotion API and will be shared across iOS and Android applications.
+In this project add `'Core.cs'` class which will consume Emotion API and will be shared across iOS, Windows and Android applications.
 
 ```csharp
 public class Core
@@ -319,5 +320,56 @@ Double click `TakePhotoButton` and add an event handler for the same. Write belo
 	PresentModalViewController(picker, true);
 }
 ```
+
+
+##### Build EmotionClient.UWP#####
+In this project, modify 'MainPage.XAML' file to create UI for the screen.
+
+
+````XAML
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="imageControl" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
+        <Button x:Name="_pictureButton" Content="Take Picture" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Click="_pictureButton_Click"/>
+        <TextBlock x:Name="_result" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Row="2"/>
+```
+
+Double click _pictureButton add an event handler for the same. Write below code in that event handler.
+
+````chsarp
+ 	    CameraCaptureUI captureUI = new CameraCaptureUI();
+            captureUI.PhotoSettings.Format = CameraCaptureUIPhotoFormat.Jpeg;
+            captureUI.PhotoSettings.CroppedSizeInPixels = new Size(200, 200);
+
+            StorageFile photo = await captureUI.CaptureFileAsync(CameraCaptureUIMode.Photo);
+
+            if (photo == null)
+            {
+                // User cancelled photo capture
+                return;
+            }
+
+            // Display the photo which was taken.
+            IRandomAccessStream streams = await photo.OpenAsync(FileAccessMode.Read);
+            BitmapDecoder decoder = await BitmapDecoder.CreateAsync(streams);
+            SoftwareBitmap softwareBitmap = await decoder.GetSoftwareBitmapAsync();
+            SoftwareBitmap softwareBitmapBGR8 = SoftwareBitmap.Convert(softwareBitmap,
+            BitmapPixelFormat.Bgra8,BitmapAlphaMode.Premultiplied);
+            SoftwareBitmapSource bitmapSource = new SoftwareBitmapSource();
+            await bitmapSource.SetBitmapAsync(softwareBitmapBGR8);
+            imageControl.Source = bitmapSource;
+
+            var randomAccessStream = await photo.OpenReadAsync();
+
+            Stream stream = randomAccessStream.AsStreamForRead();
+
+            // Get Happiness Score
+            _result.Text =  Core.GetHappinessMessage(await Core.GetAverageHappinessScore(stream));
+```
+
 
 Run the apps and notice the output. Display the result to judges to mark your hack as complete.
