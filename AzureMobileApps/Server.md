@@ -27,7 +27,7 @@ You can begin by  creating a Mobile app on Azure. Go to the *Quick Start* sectio
 *    Node.js backend - You can create this easily by following the second step under the QuickStart section.
 
 At the end of this step, you will see something similar to the below image.
-![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/SQL.png)
+![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/SQL.PNG)
 
 4.Go under the *Easy Tables* tab under your Azure Mobile App > Click on ADD FROM CSV > Upload the myTable.csv which is present  [here](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/myTable.csv)
 
