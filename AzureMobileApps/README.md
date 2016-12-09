@@ -13,6 +13,11 @@ In order to complete this step follow the guide from [here](https://github.com/n
 2. Develop the Client end code. Retrieve the data from the easy tables after authentication is performed.
 To complete this step follow the guid from [here](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Client.md) 
 
-At the end you will get to know who your Role Model is ;)
+At the end you will get to know who your Role Model is.
+
+One of the Role Models might look like this ;)
 
 Good Luck! 
+
+![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/RoleModel.PNG)
+
