@@ -6,9 +6,9 @@ Mini-hacks are designed to stimulate developers of all skill levels—each chall
 
 To get started, click one of the mini-hack folders above and attempt to complete the challenge that is described in the included README file.
 
-Note: Mini-Hacks are inspired by [Xamarin's original challenges for Evolve](https://github.com/xamarin/mini-hacks). 
+_Note: Mini-Hacks are inspired by [Xamarin's original challenges for Evolve](https://github.com/xamarin/mini-hacks). The hacks in this repository are used for contests by Microsoft Team in India. You're free to try!_
 
-The hacks in this repository are used for contests by Microsoft Team in India. You're free to try!
+
 =================
 
 ### Authors
