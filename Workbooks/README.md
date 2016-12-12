@@ -32,7 +32,7 @@ Isn't it cool? Keep going and complete everything.
 
 
 #### Step 4: Now, here's your challenge.  Change the moon shape to `Torus`. See the image below.
-![]()
+![](https://github.com/nishanil/Mini-Hacks/blob/master/Workbooks/output.gif?raw=true)
 
 Your hint: The Moon is Sphere.
 
