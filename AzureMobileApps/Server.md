@@ -2,7 +2,8 @@
 
 This is the STEP 1 of the Azure Mobile App challenge. In this, you will be creating an Azure Mobile app and integrating it with a SQL Server and adding authentication in the backend Node.js server.
 　
-You must add Authentication (Service Providers) in your app backend by at least two of these providers: Facebook, Google, Microsoft and Twitter. 
+ 
+####You must add Authentication (Service Providers) in your app backend with any *ONE* provider: Facebook, Google, Microsoft and Twitter. 
 
 ##Challenge Walkthrough:
 You can begin by  creating a Mobile app on Azure. Go to the *Quick Start* section and integrate it with a SQL database. Later you can follow steps for registering your applications with your favourite providers and adding the details of the same to Azure app.
