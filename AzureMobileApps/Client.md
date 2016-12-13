@@ -15,7 +15,7 @@ Add the below code in your class. This class is required in order to match the t
 
 
 ````csharp
-public class myTable
+    public class myTable
     {
         string desc;
         string name;
@@ -68,7 +68,8 @@ Got to MainPage.XAML page and add the below code under the *ContentPage* node.
  <ContentPage.Content>
     <Grid>
       <Grid.RowDefinitions>
-        <RowDefinition Height="Auto"/>
+
+      <RowDefinition Height="Auto"/>
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
@@ -104,7 +105,9 @@ Got to MainPage.XAML page and add the below code under the *ContentPage* node.
       </ListView>
 
     </Grid>
-  </ContentPage.Content>```
+  </ContentPage.Content> 
+  
+  ```
 
 ###Step 4
 
@@ -113,7 +116,7 @@ Let's start to add the code for Authentication of Facebook,Google,Twitter,Micros
 Go to MainPage.xaml.cs under your shared project and create an *interface*. Add the below code to implement this.
 
 ````chsarp
-public interface IAuthenticate
+        public interface IAuthenticate
         {
             Task<bool> Authenticate(int Provider);
         }
