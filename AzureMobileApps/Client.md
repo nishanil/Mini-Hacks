@@ -336,8 +336,7 @@ private MobileServiceUser user;
                     }
                 case 2:
                     {
-                        ServiceProvider = MobileServiceAuthenticationProvider.MicrosoftAccount;
-                        break;
+                        ServiceProvider = MobileServiceAuthenticationProvider.MicrosoftAccount;                        break;
                     }
                 case 3:
                     {
@@ -375,7 +374,7 @@ private MobileServiceUser user;
         }
 ```
 
-##IOS
+##iOS
 Go to AzureMobileApp.IOS> AppDelegate.cs page and add the below code.
 Implement the IAuthenticate interface which you created by changing the below line as.
 
