@@ -309,11 +309,11 @@ void OnMainContentViewSizeChanged(object sender, EventArgs args)
 
 ##Your final Game looks like this ! :)
 On Android 
-![](https://github.com/AparnaChinya/Mini-Hacks/blob/master/BugSweeper/Screenshots/01Android.png)
+![](https://github.com/nishanil/Mini-Hacks/blob/master/BugSweeper/Screenshots/01Android.png)
 
 On IOS
-![](https://github.com/AparnaChinya/Mini-Hacks/blob/master/BugSweeper/Screenshots/01iOS.png)
+![](https://github.com/nishanil/Mini-Hacks/blob/master/BugSweeper/Screenshots/01iOS.png)
 
 On Windows 
-![](https://github.com/AparnaChinya/Mini-Hacks/blob/master/BugSweeper/Screenshots/Windows.png)
+![](https://github.com/nishanil/Mini-Hacks/blob/master/BugSweeper/Screenshots/Windows.png)
 
