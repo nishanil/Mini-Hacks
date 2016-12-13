@@ -27,6 +27,7 @@ You can begin by  creating a Mobile app on Azure. Go to the *Quick Start* sectio
 *    Node.js backend - You can create this easily by following the second step under the QuickStart section.
 
 At the end of this step, you will see something similar to the below image.
+
 ![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/SQL.PNG)
 
 4.Go under the *Easy Tables* tab under your Azure Mobile App > Click on ADD FROM CSV > Upload the myTable.csv which is present  [here](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/myTable.csv)
@@ -41,12 +42,16 @@ Note: in this process, you will come across some keys/passwords/client secrets s
 ![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/C.png)
 
 2. In another browser window, navigate to the Facebook Developers website and sign-in with your Facebook account credentials.
+
 3.	(Optional) If you have not already registered, click Apps > Register as a Developer, then accept the policy and follow the registration steps.
+
 4. Click My Apps > Add a New App > Website > Skip and Create App ID. 
+
 ![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/D.png)
 
 
 5. In Display Name, type a unique name for your app, type your Contact Email, choose a Category for your app, then click Create App ID and complete the security check. This takes you to the developer dashboard for your new Facebook app.
+
 6.	Under "Facebook Login," click Get Started. Add your application's Redirect URI to Valid OAuth redirect URIs, then click Save Changes. 
 ![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/E.png)
 
@@ -55,7 +60,8 @@ Note: in this process, you will come across some keys/passwords/client secrets s
 
 7.	In the left-hand navigation, click Settings. On the App Secret field, click Show, provide your password if requested, then make a note of the values of App ID and App Secret. You use these later to configure your application in Azure.
 
-![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureAuthentication/Images/G.png)
+![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/G.png)
+
 8.	The Facebook account which was used to register the application is an administrator of the app. At this point, only administrators can sign into this application. To authenticate other Facebook accounts, click App Review and enable Make public to enable general public access using Facebook authentication.
 
 
@@ -74,7 +80,9 @@ Click Facebook, paste in the App ID and App Secret values which you obtained pre
 
 ![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/J.png)
 By default, App Service provides authentication but does not restrict authorized access to your site content and APIs. You must authorize users in your app code.
+
 4.	(Optional) To restrict access to your site to only users authenticated by Facebook, set Action to take when request is not authenticated to Facebook. This requires that all requests be authenticated, and all unauthenticated requests are redirected to Facebook for authentication.
+
 5.	When done configuring authentication, click Save.
 
 You are now ready to use Facebook for authentication in your app.
@@ -97,6 +105,7 @@ Log on to the Azure portal, and navigate to your application. Copy your URL. You
 ![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/M.png)
 
 5.	At the bottom the page, read and accept the terms. Then click Create your Twitter application. This registers the app displays the application details.
+
 6.	Click the Settings tab, check Allow this application to be used to sign in with Twitter, then click Update Settings.
 7.	Select the Keys and Access Tokens tab. Make a note of the values of Consumer Key (API Key) and Consumer secret (API Secret). 
 
