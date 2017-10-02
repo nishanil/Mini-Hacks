@@ -54,14 +54,14 @@ Once the service is created, click on Keys section and note down the keys.
     }
 ```
 
-* Add `BingSpeechService.cs` class, which will translate the speech to text using the Bing Speech API. In this class, replace [insert-translator-service-key] with your Key created earlier.
+* Add `BingSpeechService.cs` class, which will translate the speech to text using the Bing Speech API. In this class, replace [insert-speech-api-key] with your Key created earlier.
 
 ```csharp
     public class BingSpeechService
     {
 
         private static readonly string authenticationTokenEndpoint = "https://api.cognitive.microsoft.com/sts/v1.0";
-        private static readonly string bingSpeechApiKey = [insert-translator-service-key];
+        private static readonly string bingSpeechApiKey = [insert-speech-api-key];
         private static readonly string speechRecognitionEndpoint = "https://speech.platform.bing.com/recognize";
         private static readonly string audioContentType = @"audio/wav; codec=""audio/pcm""; samplerate=16000";
 
