@@ -61,7 +61,7 @@ Once the service is created, click on Keys section and note down the keys.
     {
 
         private static readonly string authenticationTokenEndpoint = "https://api.cognitive.microsoft.com/sts/v1.0";
-        private static readonly string bingSpeechApiKey = "9bd67ca367fa4f2d9e4874eea4e4f5d6";
+        private static readonly string bingSpeechApiKey = [insert-translator-service-key];
         private static readonly string speechRecognitionEndpoint = "https://speech.platform.bing.com/recognize";
         private static readonly string audioContentType = @"audio/wav; codec=""audio/pcm""; samplerate=16000";
 
