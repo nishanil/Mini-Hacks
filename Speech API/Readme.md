@@ -13,7 +13,7 @@ This challenge requires:
 
 ### Challenge Walkthrough ###
 
-#### Step 01: Get Translation API Key ####
+#### Step 01: Get Speech API Key ####
 
 Visit [Azure Portal](https://portal.azure.com/) and click on 'New' button. In the search box, search for 'Bing Speech API'. Click on the result, which will bring up details pane. There will be option to 'create' a service.
 
@@ -26,7 +26,6 @@ Select the pricing tier. For this hack, F0 Free tier will work.
 Create a new Resource Group  and click on 'Create' button.
 
 ![](https://github.com/sarthakmahapatra/Mini-Hacks/blob/master/Speech%20API/Images/02-Cognitive-Services-Creation.png)
-
 
 Once the service is created, click on Keys section and note down the keys.
 
