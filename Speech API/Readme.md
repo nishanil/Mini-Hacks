@@ -2,7 +2,7 @@
 
 ### The Challenge ###
 
-In this challenge, you will use one of the [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services) API's to bring Speech Recognition service to your cross-platform Xamarin.Forms application. The goal is to use [Microsoft Cognition Services Speech API]https://azure.microsoft.com/en-in/services/cognitive-services/speaker-recognition/) to translate text from one language to another.
+In this challenge, you will use one of the [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services) API's to bring Speech Recognition service to your cross-platform Xamarin.Forms application. The goal is to use [Microsoft Cognition Services Speech API](https://azure.microsoft.com/en-in/services/cognitive-services/speaker-recognition/) to translate text from one language to another.
 
 Below steps should help you to complete this challenge. For queries, get in touch with [@mayur_tendulkar](https://twitter.com/mayur_tendulkar) or [@nishanil](https://twitter.com/nishanil) or [@sarthakm](https://twitter.com/sarthakm)
 
@@ -34,7 +34,11 @@ Once the service is created, click on Keys section and note down the keys.
 
 #### Step 02: Create Xamarin.Forms Application ####
 
-* Create a new Xamarin.Forms application and name it SpeechToText.
+* Create a new Xamarin.Forms application and name it SpeechRecognizer.
+
+* Add these NuGet packages to all Projects in the Solution (Common PCL, Droid, iOS, UWP)
+    * [PCLStorage](https://www.nuget.org/packages/PCLStorage/)
+    * [Plugin.AudioRecorder](https://www.nuget.org/packages/Plugin.AudioRecorder/)
 
 * Add `SpeechResult.cs` class, this will be Model that will be to returned from the Bing Speech API.
 
