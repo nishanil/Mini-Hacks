@@ -147,11 +147,6 @@ Once the service is created, click on Keys section and note down the keys.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SpeechAPI" x:Class="SpeechAPI.SpeechAPIPage" x:Name="page" Title="Bing API Sample">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <local:NegateBooleanConverter x:Key="converter" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <StackLayout>
         <Label x:Name="txtSpeech" HeightRequest="200" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="{Binding SpeechText}" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="lblStatus" Text="Status" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" />
