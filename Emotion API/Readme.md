@@ -9,8 +9,7 @@ Below steps should help you to complete this challenge. For queries, get in touc
 This challenge requires:
 
 * Active Microsoft Azure Subscription. Trial is available [here](https://azure.microsoft.com/en-in/free/)
-* Microsoft Visual Studio 2015 Update 3 on Windows (with Xamarin tools installed)
-* Xamarin Studio on Mac
+* Visual Studio 2017 on Mac or Windows (with Mobile Development for .NET)
 
 ### Challenge Walkthrough ###
 
